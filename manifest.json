@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "Vocabulary dragon",
+    "version": "1.0",
+    "description": "Get a new word and its meaning periodically to expand your vocabulary.",
+    "permissions": [
+      "storage",
+      "alarms",
+  "notifications"
+    ],
+    "host_permissions": [
+      "https://api.dictionaryapi.dev/api/v2/entries/en/*"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/dragon_16.png",
+        "48": "images/dragon_48.png",
+        "128": "images/dragon_128.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js",
+       "type": "module"
+    },
+    "options_page": "options.html",
+    "icons": {
+        "16": "images/dragon_16.png",
+        "48": "images/dragon_48.png",
+        "128": "images/dragon_128.png"
+    }
+  }
