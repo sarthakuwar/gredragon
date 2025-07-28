@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vocabulary dragon Options</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #ecf0f1;
+            padding: 20px;
+            min-width: 400px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        .option {
+            margin-bottom: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 700;
+            color: #34495e;
+        }
+        input[type="number"] {
+            width: 80px;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #bdc3c7;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #3498db;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        #status {
+            margin-left: 15px;
+            color: #27ae60;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vocabulary dragon Options</h1>
+
+    <div class="option">
+        <label for="dailyGoal">Words to show per day:</label>
+        <input type="number" id="dailyGoal" min="0">
+        <button id="save">Save</button>
+        <span id="status"></span>
+    </div>
+
+    <script src="options.js"></script>
+</body>
+</html>
